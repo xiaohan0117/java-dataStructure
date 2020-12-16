@@ -17,7 +17,7 @@ public class QuickSort {
         CommonUtils.printArray(arr);
     }
 
-    private static void quickSort(int[] arr, int low, int high) {
+    public static void quickSort(int[] arr, int low, int high) {
         if (low < high){
             int index = getMidIndex(arr,low,high);
             quickSort(arr,low,index-1);
